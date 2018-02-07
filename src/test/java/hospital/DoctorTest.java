@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 public class DoctorTest {
-	Doctor underTest = new Doctor("111", "Phil");
+	Doctor underTest = new Doctor("111", "Phil", "Brain");
 	Patient patient = new Patient();
 	
 	// this test uses state verification
@@ -40,7 +40,7 @@ public class DoctorTest {
 
 	@Test
 	public void shouldHaveSalary() {
-		Employee underTest = new Doctor("","");
+		Employee underTest = new Doctor("","", "");
 		int salary = underTest.getSalary();
 		assertThat(salary, is(90000));
 	}

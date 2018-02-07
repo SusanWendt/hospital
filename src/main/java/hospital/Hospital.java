@@ -17,7 +17,7 @@ public class Hospital {
 
 	public void showPayRates() {
 		for (Employee employee : employees.values()) {
-			System.out.println(employee.getEmpName() + " " + employee.getSalary());
+			System.out.println(employee.getEmpName() + " $" + employee.getSalary());
 
 		}
 	}
@@ -25,7 +25,7 @@ public class Hospital {
 	public void showAllMedicalPersonnel() {
 		for (Employee employee : employees.values()) {
 			if (employee instanceof MedicalDuties) {
-				System.out.println((MedicalDuties) employee);
+				System.out.println(employee.getEmpName());
 			}
 		}
 	}

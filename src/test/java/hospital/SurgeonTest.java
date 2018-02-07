@@ -8,11 +8,10 @@ import org.junit.Test;
 
 public class SurgeonTest {
 	private static final boolean isOperating = true;
-	Doctor underTest = new Surgeon("222", "Harry", isOperating);
+	Doctor underTest = new Surgeon("222", "Harry", "Plastic", isOperating);
 
 	@Test
 	public void shouldCreateSurgeon() {
-		// Doctor underTest = new Surgeon("222", "Harry");
 		int salary = underTest.getSalary();
 		assertThat(salary, is(120000));
 	}

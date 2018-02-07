@@ -2,9 +2,13 @@ package hospital;
 
 public class Doctor extends Employee implements MedicalDuties {
 
-	public Doctor(String empNumber, String empName) {
+	@SuppressWarnings("unused")
+	private String specialty;
+
+	public Doctor(String empNumber, String empName, String specialty) {
 		this.empNumber = empNumber;
 		this.empName = empName;
+		this.specialty = specialty; 
 	}
 	
 	@Override

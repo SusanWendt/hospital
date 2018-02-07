@@ -12,7 +12,7 @@ public class HospitalTest {
 	@Test
 	public void shouldAddEmployee() {
 		Hospital hospital = new Hospital(); 
-		Doctor doctor = new Doctor("","");
+		Doctor doctor = new Doctor("","", "");
 		hospital.addEmployee(doctor);
 		Collection<Employee> check = hospital.getAllEmployees();
 		assertThat(check, contains(doctor));
@@ -20,7 +20,7 @@ public class HospitalTest {
 	@Test
 	public void shouldAddTwoEmployees() {
 		Hospital hospital = new Hospital(); 
-		Doctor doctor = new Doctor("1","");
+		Doctor doctor = new Doctor("1","", "");
 		Nurse nurse = new Nurse("2","");
 		hospital.addEmployee(nurse);
 		hospital.addEmployee(doctor);
